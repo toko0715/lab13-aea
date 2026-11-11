@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+capturas/
+entrega/
+*.log
+appsettings.Local.json
