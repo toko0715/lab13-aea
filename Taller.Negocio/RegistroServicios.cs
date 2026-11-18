@@ -11,6 +11,7 @@ public static class RegistroServicios
         servicios.AddDbContext<TallerContext>(opciones => opciones.UseSqlServer(cadena));
         servicios.AddScoped<IClienteRepositorio, ClienteRepositorio>();
         servicios.AddScoped<IVehiculoRepositorio, VehiculoRepositorio>();
+        servicios.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
         return servicios;
     }
 }

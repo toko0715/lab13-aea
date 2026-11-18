@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
+using Taller.Entidades;
 using Microsoft.AspNetCore.Mvc;
 using Taller.Entidades.DTOs;
 using Taller.Negocio;
 
 namespace Taller.Api.Controllers;
 
-[ApiController]
+[ApiController, Authorize]
 [Route("api/[controller]")]
 public sealed class VehiculosController(IVehiculoServicio servicio) : ControllerBase
 {
@@ -54,7 +56,7 @@ public sealed class VehiculosController(IVehiculoServicio servicio) : Controller
         }
     }
 
-    [HttpDelete("{id:int}")]
+    [HttpDelete("{id:int}"), Authorize(Roles = Roles.JefeTaller)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType<ProblemDetails>(StatusCodes.Status409Conflict)]
