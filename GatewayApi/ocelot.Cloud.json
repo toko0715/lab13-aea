@@ -9,7 +9,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ]
@@ -23,7 +23,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ],
@@ -42,7 +42,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ]
@@ -58,7 +58,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ],
@@ -77,7 +77,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ]
@@ -93,7 +93,7 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "taller-lab15.runasp.net",
+          "Host": "lab13-aea-i79m.onrender.com",
           "Port": 443
         }
       ],
