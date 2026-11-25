@@ -1,0 +1,23 @@
+[
+  {
+    "prueba": "Login",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/auth/login",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Catálogo detenido",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/servicios",
+    "esperado": 502,
+    "recibido": 502
+  },
+  {
+    "prueba": "Taller sigue disponible",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/vehiculos",
+    "esperado": 200,
+    "recibido": 200
+  }
+]

@@ -10,13 +10,13 @@ namespace Taller.Api.Controllers;
 [Route("api/[controller]")]
 public sealed class VehiculosController(IVehiculoServicio servicio) : ControllerBase
 {
-    [HttpGet]
+    [HttpGet, AllowAnonymous]
     [ProducesResponseType<List<VehiculoDto>>(StatusCodes.Status200OK)]
     public async Task<ActionResult<List<VehiculoDto>>> Listar(
         [FromQuery] string? placa, [FromQuery] string? marca, [FromQuery] int? clienteId, CancellationToken cancellationToken) =>
         Ok(await servicio.ListarAsync(placa, marca, clienteId, cancellationToken));
 
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:int}"), AllowAnonymous]
     [ProducesResponseType<VehiculoDto>(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<VehiculoDto>> Obtener(int id, CancellationToken cancellationToken)

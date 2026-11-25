@@ -1,0 +1,128 @@
+[
+  {
+    "prueba": "Login",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/auth/login",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Registro público",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/auth/registro",
+    "esperado": 201,
+    "recibido": 201
+  },
+  {
+    "prueba": "Login",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/auth/login",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Clientes públicos",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/clientes",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Vehículos públicos",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/vehiculos",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Catálogo protegido",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/servicios",
+    "esperado": 401,
+    "recibido": 401
+  },
+  {
+    "prueba": "Catálogo directo sin token",
+    "metodo": "GET",
+    "url": "http://localhost:5144/api/servicios",
+    "esperado": 401,
+    "recibido": 401
+  },
+  {
+    "prueba": "Catálogo con token",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/servicios",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Detalle de catálogo",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/servicios/1",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Servicio inexistente",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/servicios/999999",
+    "esperado": 404,
+    "recibido": 404
+  },
+  {
+    "prueba": "Perfil",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/auth/perfil",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Escritura sin token",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/clientes",
+    "esperado": 401,
+    "recibido": 401
+  },
+  {
+    "prueba": "Crear cliente",
+    "metodo": "POST",
+    "url": "http://localhost:5145/gateway/clientes",
+    "esperado": 201,
+    "recibido": 201
+  },
+  {
+    "prueba": "Leer cliente creado desde Location",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/Clientes/5",
+    "esperado": 200,
+    "recibido": 200
+  },
+  {
+    "prueba": "Actualizar cliente",
+    "metodo": "PUT",
+    "url": "http://localhost:5145/gateway/clientes/5",
+    "esperado": 204,
+    "recibido": 204
+  },
+  {
+    "prueba": "Recepción no puede eliminar",
+    "metodo": "DELETE",
+    "url": "http://localhost:5145/gateway/clientes/5",
+    "esperado": 403,
+    "recibido": 403
+  },
+  {
+    "prueba": "Jefe elimina el cliente",
+    "metodo": "DELETE",
+    "url": "http://localhost:5145/gateway/clientes/5",
+    "esperado": 204,
+    "recibido": 204
+  },
+  {
+    "prueba": "Cliente eliminado",
+    "metodo": "GET",
+    "url": "http://localhost:5145/gateway/clientes/5",
+    "esperado": 404,
+    "recibido": 404
+  }
+]

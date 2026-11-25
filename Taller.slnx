@@ -3,4 +3,6 @@
   <Project Path="Taller.Datos/Taller.Datos.csproj" />
   <Project Path="Taller.Negocio/Taller.Negocio.csproj" />
   <Project Path="Taller.Api/Taller.Api.csproj" />
+  <Project Path="GatewayApi/GatewayApi.csproj" />
+  <Project Path="Catalogo.Api/Catalogo.Api.csproj" />
 </Solution>

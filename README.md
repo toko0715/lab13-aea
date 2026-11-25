@@ -1,4 +1,8 @@
-# Laboratorio 14 JWT en el taller mecánico
+# Taller mecánico
+
+Para ejecutar los tres servicios, consultar la tabla de rutas y preparar el despliegue, abre [Laboratorio 15](LAB15.md). El contenido de semana 14 se conserva aquí como antecedente.
+
+## Laboratorio 14 JWT en el taller mecánico
 
 Extensión del proyecto S13, en las mismas cuatro capas y con SQL Server LocalDB. .NET 10, EF Core 10, BCrypt.Net-Next 4.0.3, JWT 8.19.2, JwtBearer 10.0.13 y AutoMapper 16.3.0.
 
