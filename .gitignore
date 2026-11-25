@@ -6,3 +6,5 @@ capturas/
 entrega/
 *.log
 appsettings.Local.json
+**/Properties/PublishProfiles/ 
+*.publishSettings 
